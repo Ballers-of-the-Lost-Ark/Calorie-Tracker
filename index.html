@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./external.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Calorie Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <!-- start heading -->
+        <div class="heading">
+            <div class="heading-text">
+                <h1>Calorie Tracker</h1>
+            </div>
+            <div class="heading-button">
+                <button class="button clear-all">Clear All</button>
+            </div>
+        </div>
+
+        <!-- start box 1 -->
+        <div class="box box1">
+            <div class="error none">
+                <h3>Please enter meal and calories</h3>
+            </div>
+            <div class="box1-text">
+                <h3>Add Meal</h3>
+            </div>
+            <div class="box1-input">
+                <div class="input1">
+                    <input type="text" id="input-meal" placeholder="Sushi" required="yes">
+                </div>
+                <div class="input2">
+                    <input type="number" id="input-calories" placeholder="600" required="yes">
+                </div>
+            </div>
+            <div class="box1-btns">
+                <button class="button button1"><i class="fas fa-plus"></i>Add Meal</button>
+
+                <!-- display none -->
+                <button class="none button button2"><i class="far fa-edit"></i>Update Meal</button>
+                <button class="none button button3"><i class="fas fa-times"></i>Delete Meal</button>
+                <button class="none button button4"><i class="far fa-arrow-alt-circle-left"></i>Back</button>
+            </div>
+        </div>
+
+        <div class="box2-text">
+            <h2>Total Calories: <span id="total-calories">0</span></h2>
+        </div>
+        <div class="box box2">
+            <div class="box2-list">
+                <div class="list">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
